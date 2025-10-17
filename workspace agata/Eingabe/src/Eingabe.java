@@ -1,18 +1,17 @@
+package src;
 import java.util.Scanner;
 
 public class Eingabe {
     public static void main(String[] args) {
         
-  Scanner scanner= new Scanner(System.in);
-  System.out.println ("Gib bitte zwei Zahlen an.");
+  Scanner scanner = new Scanner(System.in);
+  System.out.println ("Gib bitte ein Tier an: ");
   
-  int x = scanner.nextInt();
-  int y = scanner.nextInt();
-  int ergebnis = x + y;
+  String Tier = scanner.next();
+
+   scanner.close();
   
-  scanner.close();
-  
-  System.out.println(ergebnis);
+  System.out.println(Tier);
 }
 }
 

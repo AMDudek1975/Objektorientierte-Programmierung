@@ -1,4 +1,3 @@
-package src;
 
 import java.util.Scanner;
 
@@ -12,15 +11,19 @@ public class WunderTest{
 
    scanner.close();
 
-      while (Zahl !=1);
-
+   for(int schritte = 0; Zahl != 1; schritte++) {
+   while(Zahl != 1){
    if (Zahl % 2 == 0) {
     Zahl = Zahl/2;
    }else {
     Zahl = Zahl * 3  + 1;
    }
-   int s = 0;
-   s++;
-System.out.println("\n" + "Anzahl der Schritte: " + s + "\n");
+   schritte++;
+  }
+   System.out.println("\n" + "Anzahl der Schritte: " + schritte + "\n");
 }
-}
+    }
+  }
+
+
+   
