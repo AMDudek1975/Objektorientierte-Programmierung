@@ -17,6 +17,7 @@ public static void main(String[] args) {
         Zahl = wunder.wunder(Zahl);
         schritte++;
     }
+		System.out.println("Keine Schritte notwendig, da Zahl bereits gleich 1"); // Zeile geändert
     System.out.println("\n" + "Anzahl der Schritte: " + schritte + "\n");
     }
 }
