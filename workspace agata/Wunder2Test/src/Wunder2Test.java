@@ -1,3 +1,4 @@
+package src;
 import java.util.Scanner;
 
 
@@ -10,16 +11,18 @@ public static void main(String[] args) {
     int Zahl = scanner.nextInt();
 
     scanner.close();
-    
+    if (Zahl == 1){
+        System.out.println("\n" + "Keine Schritte");
+    }else{
     for(int schritte = 0; Zahl != 1;schritte++) {
     while(Zahl != 1){
         Wunder wunder = new Wunder();
         Zahl = wunder.wunder(Zahl);
         schritte++;
     }
-		System.out.println("Keine Schritte notwendig, da Zahl bereits gleich 1"); // Zeile geändert
     System.out.println("\n" + "Anzahl der Schritte: " + schritte + "\n");
     }
+}
 }
 }
 class Wunder{
@@ -33,3 +36,4 @@ class Wunder{
 return Zahl;
 }
 }
+
