@@ -1,13 +1,19 @@
+package src;
 import java.util.Scanner;
+
 
 public class Wunder2Test {
 public static void main(String[] args) {
 
     Scanner scanner = new Scanner(System.in);
     System.out.println ("\n" + "Gib bitte eine Zahl an: \n");
+  
     int Zahl = scanner.nextInt();
+
     scanner.close();
-    
+    if (Zahl == 1){
+        System.out.println("\n" + "Keine Schritte");
+    }else{
     for(int schritte = 0; Zahl != 1;schritte++) {
     while(Zahl != 1){
         Wunder wunder = new Wunder();
@@ -16,6 +22,7 @@ public static void main(String[] args) {
     }
     System.out.println("\n" + "Anzahl der Schritte: " + schritte + "\n");
     }
+}
 }
 }
 class Wunder{
@@ -29,3 +36,4 @@ class Wunder{
 return Zahl;
 }
 }
+

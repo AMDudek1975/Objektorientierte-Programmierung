@@ -1,8 +1,9 @@
 {
     "java.project.sourcePaths": [
-        "workspace agata/Fallunterscheidung",
         "workspace agata/WunderTest/src",
-        "workspace agata/Wunder2Test/src"
+        "workspace agata/Fallunterscheidung",
+        "workspace agata/Wunder2Test",
+        "workspace agata/Wunder3Test/src"
     ],
     "java.project.referencedLibraries": []
 }
