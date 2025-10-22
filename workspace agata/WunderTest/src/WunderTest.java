@@ -11,19 +11,19 @@ public class WunderTest{
 
    scanner.close();
 
-   for(int schritte = 0; Zahl != 1; schritte++) {
-   while(Zahl != 1){
+   for(int i = 0; Zahl != 1; i++) {
+
    if (Zahl % 2 == 0) {
     Zahl = Zahl/2;
-   }else {
+   }else{
     Zahl = Zahl * 3  + 1;
    }
-   schritte++;
-  }
+   int schritte = i + 1;
+  if (Zahl == 1)
    System.out.println("\n" + "Anzahl der Schritte: " + schritte + "\n");
 }
-    }
-  }
+}
+}
 
 
    
