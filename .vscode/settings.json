@@ -3,7 +3,10 @@
         "workspace agata/WunderTest/src",
         "workspace agata/Fallunterscheidung",
         "workspace agata/Wunder2Test",
-        "workspace agata/Wunder3Test/src"
+        "workspace agata/Wunder3Test/src",
+        "workspace agata/Tiere",
+        "workspace agata/Tiere2",
+        "workspace agata/Lektion 2"
     ],
     "java.project.referencedLibraries": []
 }
