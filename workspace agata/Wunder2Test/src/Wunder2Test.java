@@ -9,31 +9,34 @@ public static void main(String[] args) {
     System.out.println ("\n" + "Gib bitte eine Zahl an: \n");
   
     int Zahl = scanner.nextInt();
-
     scanner.close();
+    
     if (Zahl == 1){
         System.out.println("\n" + "Keine Schritte");
     }else{
-    for(int schritte = 0; Zahl != 1;schritte++) {
-    while(Zahl != 1){
-        Wunder wunder = new Wunder();
-        Zahl = wunder.wunder(Zahl);
-        schritte++;
-    }
-    System.out.println("\n" + "Anzahl der Schritte: " + schritte + "\n");
-    }
+    int schritte = Wunder(Zahl, Zahl);
+    System.out.println("\n" + "Anzahl der Schritte: " + schritte + "\n"); 
+}  
 }
-}
-}
-class Wunder{
-   int wunder(int Zahl){
 
-    if (Zahl % 2 == 0) {
-    Zahl = Zahl/2;
-   }else {
-    Zahl = Zahl * 3  + 1;
-   }
-return Zahl;
+public static int Wunder (int schritte, int Zahl) {
+            for (int i = 0; Zahl != 1; i++){
+                        if (Zahl % 2 == 0)
+                            {Zahl = Zahl / 2;}
+                        else 
+                            {Zahl = (Zahl * 3) + 1;
+                            } 
+                        schritte = i + 1;  
+}                        
+                        return schritte;
+                    
+    
 }
 }
+
+
+
+
+
+
 

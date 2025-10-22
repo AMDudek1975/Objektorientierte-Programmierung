@@ -1,14 +1,14 @@
+package src.de.mpaap.test;
 
-package de.mpaap.test;
 import java.util.Scanner;
 public class Fallunterscheidung {
      public static void main (String[] args){
 {
-      Scanner scanner = new Scanner(System.in);
+      Scanner Tier = new Scanner(System.in);
   System.out.println ("Gib bitte ein Tier an: ");
   
-  String tier = scanner.next();
-     scanner.close();
+  String tier = Tier.next();
+     Tier.close();
         
     
      if (tier. equals("Spinne")) {
